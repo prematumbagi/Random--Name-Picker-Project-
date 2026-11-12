@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    padding: 30px 15px;
+    text-align: center;
+}
+
+.container {
+    background: white;
+    max-width: 650px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+}
+
+h1 {
+    color: #6045b5;
+    margin-bottom: 12px;
+}
+
+p {
+    margin: 15px 0;
+}
+
+textarea {
+    width: 100%;
+    height: 120px;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+button {
+    background: #6655cc;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 10px 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+#nameList {
+    list-style: none;
+    margin: 15px 0;
+}
+
+#nameList li {
+    background: #eeeaff;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 8px;
+}
+
+.removeButton {
+    background: #e74c3c;
+    float: right;
+    margin: 0;
+    padding: 5px 10px;
+}
+
+.wheel-container {
+    position: relative;
+    width: 400px;
+    max-width: 100%;
+    aspect-ratio: 1;
+    margin: 35px auto;
+}
+
+#wheel {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: transform 5s cubic-bezier(0.15, 0, 0.15, 1);
+}
+
+.pointer {
+    position: absolute;
+    top: -18px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    border-top: 35px solid #e63946;
+}
+
+#pickButton {
+    background: #20a65a;
+    font-weight: bold;
+    padding: 15px 25px;
+}
+
+.result {
+    background: #f0eaff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 12px;
+}
+
+#winner {
+    color: #6045b5;
+    font-size: 24px;
+    font-weight: bold;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 450px) {
+    .container {
+        padding: 18px;
+    }
+}
